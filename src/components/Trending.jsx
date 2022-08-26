@@ -12,8 +12,8 @@ const Trending = () => {
   return (
     <div className="text-2xl mt-4">
       {response &&
-        response.coins.map((coin, i) => (
-          <TrendingList key={coin.item.coin_id} coin={coin} index={i} />
+        response.coins.map((coin) => (
+          <TrendingList key={coin.item.coin_id} coin={coin} />
         ))}
     </div>
   );
