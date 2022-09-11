@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TrendingList = ({ coin }) => {
   return (
-    <>
+    <Link to={`/coin/${coin.item.id}`}>
       <div className="font-light mb-2 p-2 border-gray-200 border-2 rounded hover:bg-gray-200">
         <div className="flex items-center gap-1">
           <span className="font-semibold">{coin.item.score + 1}.</span>
@@ -11,7 +12,7 @@ const TrendingList = ({ coin }) => {
           <small>({coin.item.symbol})</small>
         </div>
       </div>
-    </>
+    </Link>
   );
 };
 

@@ -4,7 +4,7 @@ import TrendingList from './TrendingList';
 
 const Trending = () => {
   const { response } = GetData('search/trending');
-  console.log(response);
+  // console.log(response);
   // response.map((obj) => {
   //   <span>{obj.coin_id}</span>;
   // });
